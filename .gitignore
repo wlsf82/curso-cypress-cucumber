@@ -1,0 +1,11 @@
+.DS_Store
+
+cucumber-report.html
+
+cypress.env.json
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
+
+node_modules/
+

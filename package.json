@@ -1,0 +1,18 @@
+{
+  "name": "curso-cypress-cucumber",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "cucumber",
+    "talking-about-testing",
+    "curso-de-cypress-e-cucumber"
+  ],
+  "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
+  "license": "MIT",
+  "description": "Projeto do curso - Testes End-to-End com Cypress e Cucumber: Guia Definitivo - da Escola Talking About Testing"
+}
