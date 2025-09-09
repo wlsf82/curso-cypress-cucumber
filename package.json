@@ -4,7 +4,11 @@
   "main": "cypress.config.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run",
+    "test:smoke": "cypress run --env tags='@smoke'",
+    "test:not:smoke": "cypress run --env tags='not @smoke'",
+    "test:engagesphere": "cypress run --env tags='@engagesphere'",
+    "test:hackerstories": "cypress run --env tags='@hackerstories'"
   },
   "keywords": [
     "testing",
