@@ -1,0 +1,32 @@
+name: End-to-end Tests
+on: push
+jobs:
+  tests-linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Cypress Tests 🧪
+        uses: cypress-io/github-action@v6
+      - name: HTML Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report-linux
+          path: cucumber-report.html
+          if-no-files-found: ignore
+
+  tests-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Cypress Tests 🧪
+        uses: cypress-io/github-action@v6
+      - name: HTML Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report-windows
+          path: cucumber-report.html
+          if-no-files-found: ignore
