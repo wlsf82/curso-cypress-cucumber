@@ -1,5 +1,6 @@
 Feature: Items per page
 
+  @engagesphere
   Scenario: shows the correct number per page
     Given I access the EngageSphare app having already accepted the cookies banner
     When I filter by "<number>" items per page
