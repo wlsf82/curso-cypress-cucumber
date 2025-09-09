@@ -16,3 +16,9 @@ When('I type {string} in the name input field', name => {
 Then('I see the following greeting: Hi {string}!', name => {
   cy.contains('h2', `Hi ${name}!`).should('be.visible')
 })
+
+Then('I see the following icon: {string}', icon => {
+  if (icon !== 'none') {
+    cy.get(`.${icon}`).should('be.visible')
+  }
+})
